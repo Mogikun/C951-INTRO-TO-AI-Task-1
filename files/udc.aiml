@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <!--Introduction-->
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Howdy! I'm the C951 Task 1 chatbot! What is your name?</template>
+    </category>
+    
+    <!--Name-->
+  <category>
+    <pattern>*</pattern>
+    <template>Hello <set name = "name"> <star /></set>! I am here to provide career
+     guidance to you as a Computer Science undergraduate. First of all, are you 
+     interested in a career that requires strong programming knowledge? (Yes/No)</template>
+  </category>
+  
+  <!--Yes for programming career-->
+  <category>
+      <pattern>YES</pattern>
+      <template>Are you interested in developing software programs, websites, or mobile apps?</template>
+  </category>
+  
+   <category>
+      <pattern>SOFTWARE PROGRAMS</pattern>]
+      <that>ARE YOU INTERESTED IN DEVELOPING SOFTWARE PROGRAMS, WEBSITES, OR MOBILE APPS</that>
+      <template>Software Developers are tasked with creating and developing websites, programs, and other applications that run on computers or other devices. 
+      Here is a &lt;a href="https://www.coursera.org/articles/software-engineer"&gt;Software Engineer Guide&lt;/a&gt; if you would like to learn more!</template>
+  </category>
+  
+   <category>
+      <pattern>WEBSITES</pattern>]
+      <that>ARE YOU INTERESTED IN DEVELOPING SOFTWARE PROGRAMS, WEBSITES, OR MOBILE APPS</that>
+      <template>Web Developers are programmers that are concentrated on coding, designing, and building out the layout of a website.
+      Here is a &lt;a href="https://www.coursera.org/articles/web-developer"&gt;Web Developer Guide&lt;/a&gt; if you would like to learn more!</template>
+  </category>
+  
+   <category>
+      <pattern>MOBILE APPS</pattern>]
+      <that>ARE YOU INTERESTED IN DEVELOPING SOFTWARE PROGRAMS, WEBSITES, OR MOBILE APPS</that>
+      <template>Mobile App Developers are similar to Web Developers, except their area of expertise is creating, coding, and testing for mobile applications.
+      Here is a &lt;a href="https://www.coursera.org/articles/mobile-app-development"&gt;Mobile App Developer Guide&lt;/a&gt; if you would like to learn more!</template>
+  </category>
+  
+  <!--No for programming career-->
+  <category>
+      <pattern>NO</pattern>
+      <template>Would you prefer a career requiring leadership or analytical skills?</template>
+  </category>
+  
+  <category>
+      <pattern>LEADERSHIP</pattern>
+      <that>WOULD YOU PREFER A CAREER REQUIRING LEADERSHIP OR ANALYTICAL SKILLS</that>
+      <template>IT Project Managers are in charge of planning, budgeting, and basically running an organization’s IT goals and initiatives.
+      Here is a &lt;a href="https://www.coursera.org/articles/it-project-manager"&gt;IT Project Manager Guide&lt;/a&gt; if you would like to learn more!</template>
+  </category>
+  
+  <category>
+      <pattern>ANALYTICAL</pattern>
+      <that>WOULD YOU PREFER A CAREER REQUIRING LEADERSHIP OR ANALYTICAL SKILLS</that>
+      <template>Information Security Analysts are in charge of implementing systems of safety and protecting a company’s computer networks.
+      Here is a &lt;a href="https://www.coursera.org/articles/information-security-analysts-what-they-do"&gt;Information Security Analyst Guide&lt;/a&gt; if you would like to learn more!</template>
+  </category>
+  
+  
+</aiml>
